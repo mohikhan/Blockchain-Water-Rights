@@ -18,7 +18,7 @@ will get automatically approved and buyers can start purchasing water.
 
 # Running Instructions:
 
-Steps for Deployment to local test chain Ganache:
+_Steps for Deployment to local test chain Ganache_:
 1. Change directory to ‘Water-License-Contract’
 2. Connect to ganache and import all the accounts using menomics:
 LITERATE-BOTTLE
@@ -39,7 +39,7 @@ Water-License-App/src
 
 
 
-Deployment to Sepolia and firebase
+_Deployment to Sepolia and firebase_
 We have deployed our Smart Contract to Sepolia test network and Dapp/front-end to
 Firebase
 Deployment steps:
@@ -75,7 +75,7 @@ Web3("https://sepolia.infura.io/v3/c2cc5b9ee76b478e8c1627d2d00b10df");
 
 
 
-Deployment to Firebase:
+_Deployment to Firebase_:
 1. Run “firebase login” in Water-License-App folder
 2. Copy waterLicense.json from Water-License-Contract/build/contracts folder to
 Water-License-App/src folder
