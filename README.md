@@ -44,3 +44,69 @@ Water-License-App/src
 
 
 
+
+Deployment to Sepolia and firebase
+We have deployed our Smart Contract to Sepolia test network and Dapp/front-end to
+Firebase
+Deployment steps:
+Deployment on Infura:
+1. Create an account on infura
+2. Create an .env file with following information in Water-License-Contract folder:
+MNEMONIC=add approve fold pole lab dish typical rail open promote drastic joy
+PROJECT_ID=c2cc5b9ee76b478e8c1627d2d00b10df
+3. Edit truffle-config.js file to include below:
+require('dotenv').config();
+const { MNEMONIC, PROJECT_ID } = process.env;
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+sepolia: {
+provider: () => new HDWalletProvider(MNEMONIC,
+`https://sepolia.infura.io/v3/${PROJECT_ID}`),
+ network_id: 11155111, // Sepolia's id
+confirmations: 2, // # of confirmations to wait between deployments.
+(default: 0)
+timeoutBlocks: 200, // # of blocks before a deployment times out
+(minimum/default: 50)
+skipDryRun: true // Skip dry run before migrations? (default: false for public
+nets )
+ },
+4. Modify Water-License-App/src/app.js file to include below in initializeContract
+function:
+const web3 = new
+Web3("https://sepolia.infura.io/v3/c2cc5b9ee76b478e8c1627d2d00b10df");
+5. Comment below in initializeContract function:
+//const web3 = new Web3("HTTP://127.0.0.1:7545");
+6. Run “npm install” in Water-License-Contract folder
+7. Run “truffle compile” in Water-License-Contract folder
+8. Run “truffle migrate --network sepolia” in Water-License-Contract folder
+
+
+
+Deployment to Firebase:
+1. Run “firebase login” in Water-License-App folder
+2. Copy waterLicense.json from Water-License-Contract/build/contracts folder to
+Water-License-App/src folder
+3. Run “npm install” in Water-License-App folder
+4. Run “npm run build” in Water-License-App folder
+5. Run “firebase init” in Water-License-App folder
+   Select hosting: Configure files for Firebase Hosting
+   Select “use an existing project”
+   Select the project
+   Type “build”
+   Type “y”
+ Type “N”
+6. Change firebase.json file in in Water-License-App folder
+{
+ "hosting": {
+ "public": "build",
+ "site": "cse526blockchain-water-license",
+ "ignore": [
+ "firebase.json",
+ "**/.*",
+ "**/node_modules/**"
+ ]
+ }
+}
+7. Run “firebase deploy” in Water-License-App folder
+8. Deployed website URL: https://cse526blockchain-water-license.web.app
+
+
