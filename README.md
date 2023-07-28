@@ -18,7 +18,7 @@ will get automatically approved and buyers can start purchasing water.
 
 # Running Instructions:
 
-*Steps for Deployment to local test chain Ganache*:
+**Steps for Deployment to local test chain Ganache**:
 1. Change directory to ‘Water-License-Contract’
 2. Connect to ganache and import all the accounts using menomics:
 LITERATE-BOTTLE
