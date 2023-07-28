@@ -15,6 +15,14 @@ has a weight assigned, once the total number of votes approved equals 3, the lic
 will get automatically approved and buyers can start purchasing water.
 
 **URL of website: https://cse526blockchain-water-license.web.app/**
+
+**Demonstration Video Link:
+https://buffalo.box.com/s/c5sl18y4qdn345lwcgpj1tjaa8geyynh**
+
+**Deployment Video Link:
+https://buffalo.box.com/s/agl5puuljt74v1ms1ymn5kl0w9v337mx**
+
+
 **UI/UX**
 
 <p align="center">
