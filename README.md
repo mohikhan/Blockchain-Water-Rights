@@ -14,7 +14,7 @@ seller, each voter can approve or reject the water license by casting vote. Each
 has a weight assigned, once the total number of votes approved equals 3, the license
 will get automatically approved and buyers can start purchasing water.
 
-# URL of website: https://cse526blockchain-water-license.web.app/
+**URL of website: https://cse526blockchain-water-license.web.app/**
 
 # Running Instructions:
 
