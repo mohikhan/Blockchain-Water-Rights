@@ -39,12 +39,13 @@ Water-License-App/src
 
 
 
-_Deployment to Sepolia and firebase_ 
+**_Deployment to Sepolia and firebase_** 
 
 We have deployed our Smart Contract to Sepolia test network and Dapp/front-end to
 Firebase
 Deployment steps:
-Deployment on Infura:
+
+**_Deployment on Infura_**:
 1. Create an account on infura
 2. Create an .env file with following information in Water-License-Contract folder:
 MNEMONIC=add approve fold pole lab dish typical rail open promote drastic joy
@@ -76,7 +77,7 @@ Web3("https://sepolia.infura.io/v3/c2cc5b9ee76b478e8c1627d2d00b10df");
 
 
 
-_Deployment to Firebase_:
+**_Deployment to Firebase_**:
 
 1. Run “firebase login” in Water-License-App folder
 2. Copy waterLicense.json from Water-License-Contract/build/contracts folder to
