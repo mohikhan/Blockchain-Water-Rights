@@ -23,7 +23,24 @@ contract to establish agreement rights to sell the water to buyers.
 truffle unbox pet-shop
 
 # Running Instructions:
-Report link: https://docs.google.com/document/d/1kk9IKfMJS0yaN8khLbWQtjWNGO8rdWvaoC3w3jAjVhU/edit?usp=sharing
+
+Steps for Deployment to local test chain Ganache:
+1. Change directory to ‘Water-License-Contract’
+2. Connect to ganache and import all the accounts using menomics:
+LITERATE-BOTTLE
+arrive insect wedding cactus rebel agent pink main build sibling become design
+INrr20221104!
+3. nvm use v18: to use truffle to migrate smart contract or use node version less
+than or equal to 18 if nvm is not installed
+4. npm install: to install openzeppelin packages
+5. truffle migrate –reset
+6. If the contract is not able to connect to ganache: 127.0.0.1:7545, restart the
+workspace once and repeat step 5
+7. Copy WaterLicense.json file from Water-License-Contract/build/contracts to
+Water-License-App/src
+8. Change directory to ‘Water-License-App’
+9. npm install
+10. npm start
 
 
 
